@@ -1,0 +1,25 @@
+{
+  "name": "koa-img-upload-base64",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoBey/koa-img-upload-base64.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoBey/koa-img-upload-base64/issues"
+  },
+  "homepage": "https://github.com/NoBey/koa-img-upload-base64#readme",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-mount": "^3.0.0",
+    "koa-static": "^4.0.0"
+  }
+}
