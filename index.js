@@ -10,9 +10,13 @@ function md5(str) {
 　　var ret = crypto.createHash('md5').update(str.toString()).digest("hex");
 　　return ret;
 }
-upload.use(bodyParser());
+upload.use(bodyParser({
+  formLimit: '5mb',
+  jsonLimit: '5mb',
+  textLimit: '5mb',
+}));
 upload.use(async (ctx) => {
-  const img = ctx.request.body.img.replace(/ /g,'/').split(',')
+  const img = ctx.request.body.img.split(',')
   if(!/image\/\w+/.test(img[0])) ctx.body = 'img not image type'
   const name = md5(Date.now())
   try{
